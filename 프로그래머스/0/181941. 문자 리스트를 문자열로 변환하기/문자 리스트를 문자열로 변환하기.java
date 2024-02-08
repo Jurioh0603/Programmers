@@ -1,8 +1,9 @@
 class Solution {
     public String solution(String[] arr) {
         String answer = "";
-		answer = Arrays.toString(arr);
-		answer = answer.replaceAll("[^a-zA-Z]", "");
+		for(int i=0; i<arr.length; i++) {
+			answer += arr[i];
+		}
         return answer;
     }
 }
